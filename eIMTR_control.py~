@@ -1,0 +1,10 @@
+from init import *
+import scipy.linalg as la
+
+print(np.transpose(B).dot(np.array([1,2,3,4])))
+
+def eIMTR_control(t):
+    psi = la.expm(np.transpose(A)*(-t)).dot(psi0)
+    invR = np.linalg.inv(R)
+    u = -invR.dot(np.transpose(B).dot(psi))
+    return u

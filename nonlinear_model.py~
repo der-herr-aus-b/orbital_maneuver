@@ -1,0 +1,5 @@
+from init import *
+
+def f(x,u):
+    out = np.zeros(3)
+    return out
