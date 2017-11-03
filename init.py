@@ -3,7 +3,7 @@ import numpy as np
 # sampling time #
 dt = 1.0
 
-# time horizon #
+# time horizon (in sec)#
 T = 127.2*60.0
 
 # other parameters #
